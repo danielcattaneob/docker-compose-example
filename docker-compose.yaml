@@ -1,0 +1,63 @@
+version: '3'
+
+services:
+  car-service:
+    # this image needs to be generated mannually with the dockerfile in the project folder
+    image: car-service:1.0.0
+    depends_on:
+      - car-db
+    ports:
+      # this port is only mapped because we want to test it from the host
+      - "8081:8080"
+    environment:
+      # note that the url host name is the service name of the exchange service and the port is the original from the container
+      EXCHANGE-RATE_BASE-URL: http://exchange-service:8080/exchange-rate/
+      # note that the url host name is the service name of the db
+      SPRING_DATASOURCE_URL: jdbc:mysql://car-db:3306/car
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+
+  car-db:
+    image: mysql:8
+    # this port does not need to be mapped if it is not going to be accessed from outside
+    ports:
+      - "4406:3306"
+    env_file:
+      # here we load the environment variables that are commons for both db
+      - .env
+    environment:
+      MYSQL_DATABASE: car
+    volumes:
+      - car_db_volume:/var/lib/mysql
+
+
+  exchange-service:
+    # this image needs to be generated mannually with the dockerfile in the project folder
+    image: exchange-service:1.0.0
+    ports:
+      # this port is only mapped because we want to test it from the host
+      - "8082:8080"
+    depends_on:
+      - exchange-db
+    environment:
+      # note that the url host name is the service name of the db
+      SPRING_DATASOURCE_URL: jdbc:mysql://exchange-db:3306/exchange
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+
+  exchange-db:
+    image: mysql:8
+    # this port does not need to be mapped if it is not going to be accessed from outside
+    ports:
+     - "5506:3306"
+    environment:
+      MYSQL_DATABASE: exchange
+    env_file:
+      - .env
+    volumes:
+      - exchange_db_volume:/var/lib/mysql
+
+
+volumes:
+  car_db_volume:
+  exchange_db_volume:

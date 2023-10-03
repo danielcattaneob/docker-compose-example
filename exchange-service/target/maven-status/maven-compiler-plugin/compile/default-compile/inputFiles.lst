@@ -1,0 +1,10 @@
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/dtos/ExchangeRateResponse.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/repositories/ExchangeRateRepository.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/entities/ExchangeRate.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/dtos/common/ErrorApi.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/configs/MappersConfig.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/configs/SpringDocConfig.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/services/ExchangeRateService.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/controllers/ExchangeRateController.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/ExchangeApplication.java
+/Users/danicattaneob/Documents/UTN/Tecnicatura/LABO-IV/repaso-parcial-1/exchange-service/src/main/java/ar/edu/utn/frc/tup/lciv/controllers/PingController.java

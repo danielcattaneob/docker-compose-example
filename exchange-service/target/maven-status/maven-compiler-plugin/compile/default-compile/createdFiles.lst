@@ -1,0 +1,12 @@
+ar/edu/utn/frc/tup/lciv/configs/MappersConfig.class
+ar/edu/utn/frc/tup/lciv/dtos/ExchangeRateResponse$ExchangeRateResponseBuilder.class
+ar/edu/utn/frc/tup/lciv/controllers/PingController.class
+ar/edu/utn/frc/tup/lciv/entities/ExchangeRate.class
+ar/edu/utn/frc/tup/lciv/services/ExchangeRateService.class
+ar/edu/utn/frc/tup/lciv/dtos/common/ErrorApi.class
+ar/edu/utn/frc/tup/lciv/controllers/ExchangeRateController.class
+ar/edu/utn/frc/tup/lciv/ExchangeApplication.class
+ar/edu/utn/frc/tup/lciv/dtos/ExchangeRateResponse.class
+ar/edu/utn/frc/tup/lciv/dtos/common/ErrorApi$ErrorApiBuilder.class
+ar/edu/utn/frc/tup/lciv/repositories/ExchangeRateRepository.class
+ar/edu/utn/frc/tup/lciv/configs/SpringDocConfig.class
